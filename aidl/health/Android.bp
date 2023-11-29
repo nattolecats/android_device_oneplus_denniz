@@ -15,13 +15,13 @@
  */
 
 cc_defaults {
-    name: "android.hardware.health-service.RMX3031-defaults",
+    name: "android.hardware.health-service.denniz-defaults",
     defaults: [
         "libhealth_aidl_impl_user",
         "libhealth_aidl_charger_defaults",
     ],
     relative_install_path: "hw",
-    vintf_fragments: ["android.hardware.health-service.RMX3031.xml"],
+    vintf_fragments: ["android.hardware.health-service.denniz.xml"],
     srcs: [
         "Health.cpp",
     ],
@@ -31,17 +31,17 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "android.hardware.health-service.RMX3031",
-    defaults: ["android.hardware.health-service.RMX3031-defaults"],
+    name: "android.hardware.health-service.denniz",
+    defaults: ["android.hardware.health-service.denniz-defaults"],
     vendor: true,
-    init_rc: ["android.hardware.health-service.RMX3031.rc"],
+    init_rc: ["android.hardware.health-service.denniz.rc"],
     overrides: ["charger"],
 }
 
 cc_binary {
-    name: "android.hardware.health-service.RMX3031-recovery",
-    defaults: ["android.hardware.health-service.RMX3031-defaults"],
+    name: "android.hardware.health-service.denniz-recovery",
+    defaults: ["android.hardware.health-service.denniz-defaults"],
     recovery: true,
-    init_rc: ["android.hardware.health-service.RMX3031-recovery.rc"],
+    init_rc: ["android.hardware.health-service.denniz-recovery.rc"],
     overrides: ["charger.recovery"],
 }
