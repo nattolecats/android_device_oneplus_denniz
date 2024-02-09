@@ -326,3 +326,6 @@
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.oplus                                      u:object_r:hal_lineage_touch_default_exec:s0
+
+# Alert Slider
+/(vendor|system/vendor)/bin/tri-state-key-calibrate                                       u:object_r:tri-state-key-calibrate_exec:s0

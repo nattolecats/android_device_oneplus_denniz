@@ -92,3 +92,6 @@ genfscon proc /sys/vm/direct_swappiness           u:object_r:proc_swappiness:s0
 
 # TEE
 genfscon proc /tee_bind_core                      u:object_r:vendor_proc_fingerprint:s0
+
+# Alert Slider
+genfscon proc /tri_state_key/hall_data_calib                                         u:object_r:sysfs_tri_state_key:s0
