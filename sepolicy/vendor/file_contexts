@@ -326,3 +326,6 @@
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.oplus                                      u:object_r:hal_lineage_touch_default_exec:s0
+
+# WiFi
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service\.legacy-lazy                     u:object_r:wifi_service_exec:s0
