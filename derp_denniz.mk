@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/oneplus/denniz/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Derp stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Evolution X flags
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -31,7 +31,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_denniz
+PRODUCT_NAME := derp_denniz
 PRODUCT_DEVICE := denniz
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := DN2103

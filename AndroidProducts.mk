@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_denniz.mk
+    $(LOCAL_DIR)/derp_denniz.mk
